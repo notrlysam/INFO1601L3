@@ -1,172 +1,127 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://firebasestorage.googleapis.com/v0/b/dcit-web.appspot.com/o/a2main.css.css?alt=media&token=372ab3f9-ae18-4058-83ce-2253593a0555"
-    />
+<head>
 
-    <style>
-      body {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        background-color: #fafafa;
-      }
+	<!-- 
+	816053297
+	Shival Persad
+	Lab # 3
+	 -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> repl.it </title>
+</head>
+<style>
+	.bold{
+			font-weight: bold;
+	}
+	
+	div{
+		width: 400px;
+		height: 300px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: auto;
+		margin-bottom: auto;
+		background-color: white;
+		color: black;
+		text-align: center;
+		box-shadow:  0 8px 16px 0 rgba(0,0,0,0.2);
+		border-radius:4px;
+		padding: 5px;
+	}
 
-      #stories {
-        height: 90px;
-        width: 70vw;
-        margin-top: -5px;
-        margin-left: auto;
-        margin-right: auto;
-        border: 1px solid #b5b5b5;
-        border-radius: 2px;
-        padding-left: 30px;
-      }
+	div> h2{
+	text-decoration: none;
+	}
 
-      .user {
-        width: 18%;
-        display: inline-block;
-      }
+	h2{
+			text-align: center;
+			text-decoration: underline overline solid black;
+	}
 
-      .user p {
-        text-align: center;
-        margin: 0;
-        font-family: "Lucida Sans Unicode";
-        font-weight: 100;
-        font-size: smaller;
-      }
+	p{
+			text-align: justify;
+			width:50vw;
+			margin-left: auto;
+			margin-right: auto;
+	}
 
-      .post {
-        border: 1px solid #b5b5b5;
-        border-radius: 2px;
-        height: 60vh;
-        width: 560px;
-        margin: 20px auto; /* auto left & right center horizontally */
-        text-align: center; /* center contents inside post */
-        overflow: hidden; /* optional, prevents images from overflowing */
-      }
+	p:hover{
+        outline: 2px double red;
+	}	
 
-      .post-header {
-        background-color: white;
-        height: 50px;
-        box-sizing: border-box;
-        width: 100%; /* make it full width of the post */
-        padding: 5px;
-        border-bottom: 1px solid #b5b5b5;
-        display: flex; /* use flex to align image & text nicely */
-        align-items: center;
-        gap: 10px;
-      }
+	section{
+		border-bottom: 5px solid black;
+		height: 40vh;
+  		overflow-y:scroll
+	}
 
-      .post-header img {
-        width: 40px; /* avatar size */
-        height: 40px;
-        border-radius: 50%;
-      }
+	#section1::before{
+		background-image: url("https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80");
+		background-size: stretch;
+		background-position: center;
+		content: "";
+		position: absolute;
+		width:100%;
+		height: 100%;
+		z-index: -2;
+		opacity: 0.3;
+		border-bottom: 5px;
+	}
 
-      .post-header span {
-        font-weight: bold;
-        font-family: "Lucida Sans Unicode", sans-serif;
-      }
+	#section2{
+		padding: 2em;
+		color: white;
+		height: 60vh;
+		background: rgb(131,58,180);
+		background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,211,253,1) 50%, rgba(252,176,69,1) 100%);
+	}
 
-      nav {
-        display: inline-block;
-        background-color: white;
-        width: 100%;
-        height: 54px;
-        border-bottom: 1px solid #e5e5e5;
-      }
+</style>
+</head>
+<body>
+	<section id="section1">
 
-      #logo {
-        height: 40px;
-        position: relative;
-        left: 10%;
-        top: 20%;
-      }
+		<h1> Sample Poem </h1>
 
-      input {
-        height: 25px;
-        position: relative;
-        width: 30vw;
-        left: 35vw;
-        right: 35vw;
-        background-color: #fafafa;
-        text-align: center;
-        border: 1px solid #b5b5b5;
-        border-radius: 3px;
-        bottom: 20%;
-      }
+		<h2> Students Come to the Labs </h2>
 
-      #actions {
-        height: 40px;
-        position: relative;
-        right: 0px;
-        left: 40%;
-      }
+		<p> 
+			<span style="font-weight: bold;"> Why </span> won't students come to labs?
+			This is something I always ponder. 
+			After unprepared students write exams, 
+			They watch their marks in wonder. 
+		</p>
 
-      .user img {
-        margin-top: 5px;
-        border-radius: 50%;
-        border: 4px double #b5b5b5;
-        width: 56px;
-        height: 56px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
-    </style>
-  </head>
-  <body>
-    <nav>
-      <img id="logo" src="img/instagran.png" alt="instagran logo" />
+		<p> 
+			<span style="font-weight: bold;"> Why </span> won't students come to labs? 
+			What is more important than class? 
+			How can you be a student if you don't even try to pass? 
+		</p>
 
-      <input type="text" placeholder="search" />
+		<p> 
+			<span style="font-weight: bold;"> Why </span> won't students come to labs? 
+			It happens all the time. 
+			If you came to labs, you'd know what to do. 
+			But you would rather duck and go lime. 
+		</p>
 
-      <img id="actions" src="img/actions.png" alt="actions" />
-    </nav>
+		<p> <span style="font-weight: bold;"> Why </span> won't students come to labs? 
+			I see them all now stressing. 
+			If you only learned this basic programming, 
+			You would surely now be zessing. 
+		</p>
 
-    <section id="stories">
-      <div class="user" id="mydiv">
-        <img src="img/gran1.jpg" />
-        <p class="userstory">Elma</p>
-      </div>
-      <div class="user">
-        <img src="img/gran2.jpg" />
-        <p class="userstory">Betty</p>
-      </div>
-      <div class="user">
-        <img src="img/gran3.jpg" />
-        <p class="userstory">Sandra</p>
-      </div>
-      <div class="user">
-        <img src="img/gran4.jpg" />
-        <p class="userstory">Delores</p>
-      </div>
+	</section>
+    
+	<section id="section2">
+		<div> 
+			<h2> This is a div </h2>
+		</div>
 
-      <div class="user">
-        <img src="img/gran5.jpg" />
-        <p class="userstory">Karen</p>
-      </div>
     </section>
 
-    <section class="post">
-      <div class="post-header">
-        <img src="img/gran1.jpg" /><span>Elma</span>
-      </div>
-      <div class="post">
-        <img
-          class="post-image"
-          src="https://bloody-disgusting.com/wp-content/uploads/2022/01/ghost-rider-4.png"
-          alt="cage image"
-        />
-      </div>
-    </section>
-
-    <footer></footer>
-  </body>
+	<script src="script.js"></script>
+</body>
 </html>
